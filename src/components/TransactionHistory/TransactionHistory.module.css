@@ -1,0 +1,32 @@
+.transactions{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 400px;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.thead{
+	display: flex;
+	flex-direction: row;
+	min-width: 400px;
+}
+
+.theadHeader{
+	display: flex;
+	flex-direction: row;
+	min-width: 400px;
+	background-color:aqua;
+}
+
+.td{
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	border: 0.5px solid grey;
+}
+
+.thead:nth-child(2n+1){
+	background-color:rgb(202, 202, 202);
+}

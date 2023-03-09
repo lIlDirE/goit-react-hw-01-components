@@ -1,0 +1,25 @@
+.friendsList{
+	display: flex;
+}
+
+.friendsList li{
+	width: 200px;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: white;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.status {
+	background-color: green;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+}
+
+.isOutLined{
+	background-color: red;
+}

@@ -1,0 +1,52 @@
+li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	
+}
+
+.statistics{
+	min-width: 300px;
+	background-color: white;
+	margin-bottom: 30px;
+	border-radius: 20px;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	color: rgb(150, 150, 150);
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 44px;
+}
+
+.statList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.statList li{
+	background-color: red;
+}
+
+.statList li:first-child{
+	background-color: yellow;
+}
+
+.statList li:nth-child(2){
+	background-color: rgb(91, 236, 7);
+}
+
+.statList li:nth-child(3){
+	background-color: palevioletred;
+}
+
+.statList li:last-child{
+	background-color: blueviolet;
+}
