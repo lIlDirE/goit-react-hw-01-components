@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import css from './FriendList.module.css';
 
-export default function FriendListItem({ avatar, name, isOnline, id }) {
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li key={id} className="item">
+    <li className="item">
       <span className={clsx(css.status, !isOnline && css.isOutLined)}>
         {isOnline}
       </span>
@@ -15,12 +15,7 @@ export default function FriendListItem({ avatar, name, isOnline, id }) {
 }
 
 FriendListItem.propTypes = {
-  friends: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       avatar: PropTypes.string.isRequired,
-    })
-  ),
 };
